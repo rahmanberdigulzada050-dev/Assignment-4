@@ -1,4 +1,4 @@
-Task 1: DFS Traversal Order (Starting from A)
+ DFS Traversal Order (Starting from A)
 Order: A → C → D → B → E → G → F
 
 Detailed Trace (using stack, Sedgewick & Wayne style – recursive):
