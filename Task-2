@@ -1,0 +1,21 @@
+Task 2: BFS Traversal Order (Starting from A)
+Order: A → C → B → D → E → G → F
+
+Detailed Trace (using queue):
+
+Queue: [A] → visit A → add neighbors C, B, D → queue: [C, B, D]
+
+Visit C → add neighbors A(visited), B(already in queue), D(already in queue) → queue: [B, D]
+
+Visit B → add neighbors A(visited), C(visited), E(not visited), G(not visited) → queue: [D, E, G]
+
+Visit D → add neighbors C(visited), A(visited) → queue: [E, G]
+
+Visit E → add neighbors G(already in queue), F(not visited), B(visited) → queue: [G, F]
+
+Visit G → add neighbors F(already in queue), B(visited) → queue: [F]
+
+Visit F → add neighbors G(visited), E(visited) → queue empty
+
+BFS Output: A, C, B, D, E, G, F
+
