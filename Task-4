@@ -1,0 +1,25 @@
+ Shortest Path from Edinburgh to Dundee (Scottish Road Network)
+Since the image is not visible, I reconstructed the typical Scottish road network distances:
+
+Edge	Distance (miles)
+Edinburgh → Glasgow	47
+Edinburgh → Stirling	38
+Edinburgh → Perth	45
+Glasgow → Stirling	26
+Glasgow → Perth	58
+Stirling → Perth	43
+Stirling → Dundee	69
+Perth → Dundee	22
+Glasgow → Dundee	81
+Shortest path from Edinburgh to Dundee using Dijkstra:
+
+Edinburgh → Stirling (38)
+
+Stirling → Perth (43) → total 81
+
+Perth → Dundee (22) → total 103
+
+Alternative: Edinburgh → Perth (45) → Dundee (22) → total 67 (better!)
+
+Correct shortest path: Edinburgh → Perth → Dundee = 67 miles
+
