@@ -1,0 +1,20 @@
+Task 1: DFS Traversal Order (Starting from A)
+Order: A → C → D → B → E → G → F
+
+Detailed Trace (using stack, Sedgewick & Wayne style – recursive):
+
+Visit A (mark visited) → go to first neighbor: C (not visited)
+
+Visit C (mark visited) → go to first neighbor: A (visited) → next: B (not visited)
+
+Visit B (mark visited) → go to first neighbor: A (visited) → next: C (visited) → next: E (not visited)
+
+Visit E (mark visited) → go to first neighbor: G (not visited)
+
+Visit G (mark visited) → go to first neighbor: F (not visited)
+
+Visit F (mark visited) → neighbors: G (visited), E (visited) → backtrack to G → backtrack to E → next: F (visited) → next: B (visited) → backtrack to B → next: G (visited) → backtrack to C → next: D (not visited)
+
+Visit D (mark visited) → neighbors: C (visited), A (visited) → done
+
+DFS Output: A, C, B, E, G, F, D
